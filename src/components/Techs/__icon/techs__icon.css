@@ -1,0 +1,13 @@
+.techs__icon {
+    background-color: #E8E8E8;
+    border-radius: 10px;
+    height: 60px;
+    width: 90px;
+}
+
+@media (max-width: 768px) {
+    .techs__icon {
+        height: 57px;
+        width: 84px;
+    }
+  }

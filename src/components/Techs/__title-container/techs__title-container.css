@@ -1,0 +1,18 @@
+.techs__title-container {
+    height: 50px;
+    width: 89.0625%;
+    margin: 100px auto 0;
+    border-bottom: 1px solid #000;
+}
+
+@media (max-width: 768px) {
+    .techs__title-container {
+        max-width: 688px;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .techs__title-container {
+      width: 284px;
+    }
+  }

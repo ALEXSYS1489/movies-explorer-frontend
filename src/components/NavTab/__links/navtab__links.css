@@ -1,0 +1,17 @@
+.navtab__links {
+    display: flex;
+    margin: 0 auto;
+    padding: 151px 0 0;
+}
+
+@media (max-width: 768px) {
+    .navtab__links {
+        padding: 314px 0 0;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .navtab__links {
+        padding: 212px 0 0;
+    }
+  }

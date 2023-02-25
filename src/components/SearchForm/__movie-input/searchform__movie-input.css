@@ -1,0 +1,28 @@
+.searchform__movie-input {
+    background-color: #F9F9F9;
+    border-radius: 8px;
+    height: 50px;
+    width: 1086px;
+    border: none;
+    padding: 0;
+}
+
+.searchform__movie-input::placeholder {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #A0A0A0;
+    padding: 0 0 0 20px;
+} 
+  
+  @media (max-width: 420px) {
+    .searchform__movie-input {
+      height: 44px;
+    }
+
+    .searchform__movie-input::placeholder {
+      padding: 0 0 0 13px;
+  } 
+  }

@@ -1,0 +1,23 @@
+.about-me__link {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    text-decoration: none;
+    margin: 99px 0 0;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .about-me__link {
+        margin: 87px 0 0;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .about-me__link {
+        margin: 40px 0 0;
+    }
+  }

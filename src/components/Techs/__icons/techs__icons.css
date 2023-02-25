@@ -1,0 +1,22 @@
+.techs__icons {
+    display: flex;
+    margin: 100px auto;
+    column-gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .techs__icons {
+        margin: 83px auto 90px;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .techs__icons {
+      width: 178px;
+      margin: 50px auto 70px;
+      justify-content: start;
+    }
+  }
