@@ -10,11 +10,13 @@ function Main() {
     return (
         <>
         <Header/>
-        <NavTab/>
-        <AboutProject/>
-        <Techs/>
-        <AboutMe/>
-        <Portfolio/>
+        <main>
+            <NavTab/>
+            <AboutProject/>
+            <Techs/>
+            <AboutMe/>
+            <Portfolio/>
+        </main>
         <Footer/>
         </>
     );

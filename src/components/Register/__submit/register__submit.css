@@ -22,5 +22,6 @@ cursor: pointer;
     .register__submit {
         font-size: 12px;
         line-height: 15px;
+        margin: 157px 0 0;
     }
   }

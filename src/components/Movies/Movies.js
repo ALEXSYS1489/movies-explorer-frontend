@@ -8,9 +8,11 @@ function Movies() {
     return (
         <>
         <Header/>
-        <SearchForm/>
-        <MoviesCardList/>
-        <Footer/>
+        <main>
+            <SearchForm/>
+            <MoviesCardList/>
+            <Footer/>
+        </main>
         <Menu/>
         </>
     );

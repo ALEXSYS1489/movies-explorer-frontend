@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 function Login() {
     return (
-        <div className="login">
+        <main className="login">
             <form className="login__form">
             <NavLink to="/" className="login__logo"/>
             <h1 className="login__title">Рады видеть!</h1>
@@ -16,7 +16,7 @@ function Login() {
                 <NavLink to="/signup" className="login__link">Регистрация</NavLink>
             </p>
             </form>
-        </div>
+        </main>
     );
   }
   

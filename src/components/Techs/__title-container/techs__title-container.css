@@ -14,5 +14,6 @@
   @media (max-width: 420px) {
     .techs__title-container {
       width: 284px;
+      margin: 70px auto 0;
     }
   }
