@@ -1,0 +1,24 @@
+.portfolio__link {
+    display: block;
+    width: 29px;
+    height: 60px;
+    margin: 0 0 9px;
+    background-image: url(../../../images/link-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .portfolio__link {
+        width: 27px;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .portfolio__link {
+        width: 18px;
+        height: 28px;
+        margin: 0;
+        background-size: 60%;
+    }
+  }

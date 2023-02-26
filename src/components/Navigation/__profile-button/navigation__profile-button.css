@@ -1,0 +1,26 @@
+.navigation__profile-button{
+    box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.08);
+    border-radius: 40px;
+    height: 32px;
+    width: 100px;
+    background: #FFFFFF;
+    border: none;
+    display: flex;
+    padding: 0;
+    text-decoration: none;
+    color: #000;
+    margin: 21px 70px 0 0;
+}
+
+@media (max-width: 768px) {
+    .navigation__profile-button {
+      display: none;
+      margin: 593px auto 90px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .navigation__profile-button {
+      margin: 430px auto 46px;
+    }
+  }

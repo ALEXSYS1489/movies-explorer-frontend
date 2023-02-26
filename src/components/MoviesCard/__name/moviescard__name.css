@@ -1,0 +1,14 @@
+.moviescard__name {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0;
+}
+
+  @media (max-width: 740px) {
+    .moviescard__name {
+        font-size: 12px;
+    }
+  }

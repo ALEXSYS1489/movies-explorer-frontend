@@ -1,0 +1,18 @@
+.searchform__search-container {
+    display: flex;
+    margin: 80px auto 0;
+    width: 89.0625%;
+    column-gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .searchform__search-container {
+        width: 92.1875%;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .searchform__search-container {
+      width: 91.25%;
+    }
+  }

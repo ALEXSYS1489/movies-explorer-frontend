@@ -1,0 +1,12 @@
+.searchform__shortfilm-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(0 0 0 0);
+}
+
+.searchform__shortfilm-checkbox:checked +.searchform__visible-shortfilm-checkbox .searchform__smallthumb  {
+    margin: 2px 0 0 2px;
+    background: #F5F5F5;
+}

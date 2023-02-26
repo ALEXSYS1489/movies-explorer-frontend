@@ -1,0 +1,20 @@
+.about-me__title-container {
+    height: 50px;
+    width: 89.0625%;
+    margin: 110px auto 0;
+    border-bottom: 1px solid #000;
+}
+
+@media (max-width: 768px) {
+    .about-me__title-container {
+        margin: 90px auto 0;
+        max-width: 668px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .about-me__title-container {
+        width: 292px;
+        margin: 70px auto 0;
+    }
+  }

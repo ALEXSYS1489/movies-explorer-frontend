@@ -1,0 +1,32 @@
+.profile__submit-button {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 410px;
+    height: 45px;
+    background-color: #3456F3;
+    border-radius: 3px;
+    border: none;
+    padding: 0;
+    margin: 20px auto 50px;
+    display: none;
+}
+
+.profile__submit-button:hover {
+    cursor: pointer;
+}
+
+.profile__submit-button:disabled{
+    color: #C2C2C2;
+    background-color: #F8F8F8;
+}
+
+@media (max-width: 430px) {
+    .profile__submit-button {
+        width: 260px;
+    }
+  }

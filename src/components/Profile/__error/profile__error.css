@@ -1,0 +1,12 @@
+.profile__error {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: #FF004C;
+    margin: 189px auto 0;
+    display: none;
+    height: 14px;
+}

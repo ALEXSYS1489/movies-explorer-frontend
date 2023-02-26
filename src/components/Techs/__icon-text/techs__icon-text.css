@@ -1,0 +1,18 @@
+.techs__icon-text {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    margin: 21px auto 0;
+}
+
+@media (max-width: 768px) {
+    .techs__icon-text {
+        font-size: 12px;
+        line-height: 15px;
+    }
+  }
+  

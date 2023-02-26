@@ -1,0 +1,39 @@
+.about-project__timeline-name {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    width: 20%;
+    height: 17px;
+    margin: 14px 0 0 0;
+    color: #A0A0A0;
+}
+
+.about-project__timeline-name:last-of-type {
+    width: 80%;
+}
+
+@media (max-width: 768px) {
+  .about-project__timeline-name {
+    max-width: 140px;
+  }
+
+  .about-project__timeline-name:last-of-type {
+    max-width: 528px;
+  }
+  }
+  
+  @media (max-width: 420px) {
+    .about-project__timeline-name {
+      width: 100px;
+      font-size: 11px;
+      line-height: 13px;
+      font-weight: 400;
+    }
+  
+    .about-project__timeline-name:last-of-type {
+      width: 184px;
+    }
+  }

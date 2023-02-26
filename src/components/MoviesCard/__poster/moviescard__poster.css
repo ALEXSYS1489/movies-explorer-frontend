@@ -1,0 +1,18 @@
+.moviescard__poster {
+    width: 100%;
+    height: 200px;
+    margin: 18px 0 0;
+ }
+
+ @media (max-width: 1240px) {
+    .moviescard__poster {
+        height: 190px;
+    }
+  }
+  
+  @media (max-width: 740px) {
+    .moviescard__poster {
+        height: 168px;
+        margin: 14px 0 0;
+    }
+  }

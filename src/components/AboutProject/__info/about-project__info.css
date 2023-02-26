@@ -1,0 +1,16 @@
+.about-project__info {
+    max-width: 550px;
+}
+
+@media (max-width: 768px) {
+    .about-project__info {
+        max-width: 319px;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .about-project__info {
+        max-width: 284px;
+        margin: 56px 0 0;
+    }
+  }

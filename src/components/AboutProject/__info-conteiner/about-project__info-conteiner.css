@@ -1,0 +1,20 @@
+.about-project__info-conteiner {
+    width: 89.0625%;
+    margin: 70px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .about-project__info-conteiner {
+      max-width: 688px; 
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .about-project__info-conteiner {
+        max-width: 284px;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+  }
