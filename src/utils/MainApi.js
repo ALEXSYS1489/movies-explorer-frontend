@@ -2,9 +2,8 @@ import { conf } from "./utils.js";
 
 export class MainApi {
   constructor(conf){
-    // this._url = conf.mainApiUrl
-    // this._link = `${this._url}`
-    this._link = '//localhost:3002'
+    this._url = conf.mainApiUrl
+    this._link = `${this._url}`
   }
 
   getUser(){
