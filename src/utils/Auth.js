@@ -1,6 +1,5 @@
 import conf from "./utils.js";
-// const BASE_URL = conf.mainApiUrl;
-const BASE_URL = '//localhost:3002';
+const BASE_URL = conf.mainApiUrl;
 
 export const register = (name, email, password) => {
   return fetch(`${BASE_URL}/signup`, {

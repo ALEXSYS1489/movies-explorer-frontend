@@ -8,3 +8,6 @@ api.alexsysdip.nomoredomainsclub.ru
 
 Фронтэнд:
 alexsysdip.nomoredomainsclub.ru
+
+Пул реквест:
+https://github.com/ALEXSYS1489/movies-explorer-frontend/pull/2
