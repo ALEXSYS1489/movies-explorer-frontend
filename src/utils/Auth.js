@@ -1,4 +1,4 @@
-import conf from "./utils.js";
+import { conf } from "./utils.js";
 const BASE_URL = conf.mainApiUrl;
 
 export const register = (name, email, password) => {
