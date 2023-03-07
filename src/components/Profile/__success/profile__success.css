@@ -1,0 +1,12 @@
+.profile__success {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: #33aa33;
+    margin: 0;
+    display: none;
+    height: 14px;
+ }

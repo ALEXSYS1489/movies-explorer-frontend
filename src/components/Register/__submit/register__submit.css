@@ -10,8 +10,17 @@
     border-radius: 3px;
     padding: 0;
     height: 45px;
-    margin: 69px 0 0;
+    margin: 20px 0 0;
     border: none;
+}
+
+.register__submit:disabled {
+    background: #F8F8F8;
+    color: #C2C2C2;
+}
+
+.register__submit:disabled:hover {
+    cursor: auto;
 }
 
 .register__submit:hover {
@@ -22,6 +31,5 @@ cursor: pointer;
     .register__submit {
         font-size: 12px;
         line-height: 15px;
-        margin: 157px 0 0;
     }
   }

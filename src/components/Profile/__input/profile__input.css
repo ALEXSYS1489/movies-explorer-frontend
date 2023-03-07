@@ -17,3 +17,7 @@
     text-align: right;
     color: #000;
 }
+
+.profile__input:disabled {
+    background-color: #fff;
+}

@@ -1,8 +1,8 @@
 .searchform__smallthumb {
-    background: #2BE080;
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    margin: 2px 0 0 18px;
     transition: 0.1s linear;
+    margin: 2px 0 0 2px;
+    background: #F5F5F5
 }

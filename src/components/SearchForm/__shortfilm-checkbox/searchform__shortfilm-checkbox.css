@@ -7,6 +7,6 @@
 }
 
 .searchform__shortfilm-checkbox:checked +.searchform__visible-shortfilm-checkbox .searchform__smallthumb  {
-    margin: 2px 0 0 2px;
-    background: #F5F5F5;
+    margin: 2px 0 0 18px;
+    background: #2BE080;
 }

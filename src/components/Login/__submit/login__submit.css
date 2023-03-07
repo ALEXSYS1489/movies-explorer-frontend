@@ -10,8 +10,17 @@
     border-radius: 3px;
     padding: 0;
     height: 45px;
-    margin: 169px 0 0;
+    margin: 20px 0 0;
     border: none;
+}
+
+.login__submit:disabled {
+    background: #F8F8F8;
+    color: #C2C2C2;
+}
+
+.login__submit:disabled:hover {
+    cursor: auto;
 }
 
 .login__submit:hover {
@@ -22,6 +31,5 @@
     .login__submit {
         font-size: 12px;
         line-height: 15px;
-        margin: 257px 0 0;
     }
   }
