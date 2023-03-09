@@ -17,6 +17,7 @@ import Preloader from "../Preloader/Preloader";
 
 function App() {
   const [isSearched, setIsSearched] = useState(false);
+  const [isSavedSearched, setIsSavedSearched] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [loggedIn, setLoggedIn] = useState(false);
   const [isEditedUser, setIsEditedUser] = useState(false);
@@ -45,6 +46,28 @@ function App() {
         setSearchedMovies(search(data, searchText, shortfilm))
         setVisibleMovies(vizualizate(search(data, searchText, shortfilm)))
         setIsSearched(true)
+        setSearchError('')
+        setIsSavedSearched(false)
+      })
+      .catch((err) => {
+        console.log("Ошибка сервера", err);
+        setSearchError("Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз")
+      })
+      .finally(() => {
+        setIsLoading(false)
+      });
+  }
+
+  function handleSearhSaveMovies(searchText, shortfilm) {
+    setIsLoading(true)
+    mainApi
+      .getSavedMovies()
+      .then((data) => {
+        
+        setSearchedMovies(search(data, searchText, shortfilm))
+        // setVisibleMovies(vizualizate(search(data, searchText, shortfilm)))
+        // setIsSearched(true)
+        setIsSavedSearched(true)
         setSearchError('')
       })
       .catch((err) => {
@@ -140,7 +163,21 @@ function App() {
   }
 
   function handleLogout() {
+    localStorage.removeItem("movies");
+    localStorage.removeItem("searchText");
+    localStorage.removeItem("shortfilm");
     localStorage.removeItem("token");
+    setIsSavedSearched(false);
+    setIsSearched(false);
+    setSearchError('');
+    setCurrentUser({});
+    setSearchedMovies([]);
+    setSavedMovies([]);
+    setVisibleMovies([]);
+    setApiError('');
+    setSearchError('');
+    setSearchText('');
+    setShortfilm(false);
     setLoggedIn(false);
     history.push("/");
   }
@@ -158,7 +195,6 @@ function App() {
       if (user) {
         setLoggedIn(true);
         setCurrentUser(user);
-        history.push("/");
       }
     } catch (err) {
       console.log("Ошибка сервера", err);
@@ -233,7 +269,7 @@ function App() {
         <ProtectedRoute
           exact
           path="/saved-movies"
-          isSearched={isSearched}
+          isSearched={isSavedSearched}
           loggedIn={loggedIn}
           savedMovies={savedMovies}
           visibleMovies={visibleMovies}
@@ -242,10 +278,11 @@ function App() {
           searchText={searchText}
           shortfilm={shortfilm}
           component={SavedMovies}
-          handleSearh={handleSearh}
+          handleSearh={handleSearhSaveMovies}
           handleDeleteMovie={handleDeleteMovie}
           isOpenMenu={isOpenMenu}
           setIsOpenMenu={setIsOpenMenu}
+          setIsSavedSearched={setIsSavedSearched}
         />
 
         <ProtectedRoute

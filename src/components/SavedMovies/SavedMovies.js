@@ -4,7 +4,9 @@ import SearchForm from "../SearchForm/SearchForm";
 import MoviesCardList from "../MoviesCardList/MoviesCardList";
 import Menu from "../Menu/Menu"
 
-function SavedMovies({handleSearh, handleDeleteMovie, savedMovies, visibleMovies, searchedMovies, isSearched, searchError, searchText, shortfilm, isOpenMenu, setIsOpenMenu}) {
+function SavedMovies({handleSearh, handleDeleteMovie, savedMovies, visibleMovies, searchedMovies, 
+    isSearched, searchError, searchText, shortfilm, isOpenMenu, setIsOpenMenu}) {
+
     return (
         <>
             <Header
@@ -23,6 +25,7 @@ function SavedMovies({handleSearh, handleDeleteMovie, savedMovies, visibleMovies
                     visibleMovies={visibleMovies}
                     handleDeleteMovie={handleDeleteMovie}
                     searchedMovies={searchedMovies}
+                    isSearched={isSearched}
                 />
              :
                 <h2 className="movies-preloader">{searchError ? searchError : isSearched ? "Ничего не найдено" : ""}</h2>

@@ -6,15 +6,15 @@ function Portfolio() {
             <h2 className="portfolio__title">Портфолио</h2>    
             <div className="portfolio__link-block">
                 <h3 className="portfolio__link-name">Статичный сайт</h3>
-                <a className="portfolio__link" alt="Ссылка на статичный сайт" href="https://github.com/ALEXSYS1489" target="_blank"/>
+                <a className="portfolio__link" alt="Ссылка на статичный сайт" href="https://github.com/ALEXSYS1489/how-to-learn" target="_blank"/>
             </div>
             <div className="portfolio__link-block">
                 <h3 className="portfolio__link-name">Адаптивный сайт</h3>
-                <a className="portfolio__link" alt="Ссылка на адаптивный сайт" href="https://github.com/ALEXSYS1489" target="_blank"/>
+                <a className="portfolio__link" alt="Ссылка на адаптивный сайт" href="https://github.com/ALEXSYS1489/russian-travel" target="_blank"/>
             </div>
             <div className="portfolio__link-block">
                 <h3 className="portfolio__link-name">Одностраничное приложение</h3>
-                <a className="portfolio__link" alt="Ссылка на одностраничное приложение" href="https://github.com/ALEXSYS1489" target="_blank"/>
+                <a className="portfolio__link" alt="Ссылка на одностраничное приложение" href="https://github.com/ALEXSYS1489/react-mesto-api-full" target="_blank"/>
             </div>
         </section>
     );

@@ -1,11 +1,12 @@
 import { Route,} from "react-router-dom";
 import MoviesCard from "../MoviesCard/MoviesCard";
 
-function MoviesCardList({savedMovies, visibleMovies, searchedMovies, handleSaveMovie, handleDeleteMovie, handleMoreMovies}) {
+function MoviesCardList({savedMovies, visibleMovies, searchedMovies, handleSaveMovie, handleDeleteMovie, handleMoreMovies, isSearched}) {
 
     const visibleSavedMovies = searchedMovies.filter(function (movie) {
         return savedMovies.some(function (savedMovie) {
-            return savedMovie.movieId === movie.id;
+            if(movie.id) { return savedMovie.movieId === movie.id;}
+            else { return savedMovie.movieId === movie.movieId;}
         });
     })
     
@@ -32,13 +33,25 @@ function MoviesCardList({savedMovies, visibleMovies, searchedMovies, handleSaveM
             <Route path="/saved-movies">
                 <div className="moviescardlist__container">
 
-                    {visibleSavedMovies.map((movie) => (
+                {isSearched 
+                ? 
+                    visibleSavedMovies.map((movie) => (
+                            <MoviesCard
+                                movie={movie}
+                                savedMovies={savedMovies}
+                                handleDeleteMovie={handleDeleteMovie}
+                            />
+                    )) 
+                : 
+                    savedMovies.map((movie) => (
                         <MoviesCard
                             movie={movie}
                             savedMovies={savedMovies}
                             handleDeleteMovie={handleDeleteMovie}
                         />
-                    ))}
+                    ))
+                }
+
                 </div>
                 <button className="moviescardlist__more moviescardlist__more_disabled" disabled></button>
             </Route>

@@ -3,8 +3,9 @@ import { Route } from "react-router-dom";
 function MoviesCard({movie, handleSaveMovie, savedMovies, handleDeleteMovie}) {
 
     const savedMovie = savedMovies.find(function (savedMovie) {
-        return savedMovie.movieId === movie.id}
-    );
+        if(movie.id) { return savedMovie.movieId === movie.id;}
+        else { return savedMovie.movieId === movie.movieId;}
+    });
 
     return (
         <div className="moviescard">
@@ -23,7 +24,7 @@ function MoviesCard({movie, handleSaveMovie, savedMovies, handleDeleteMovie}) {
             </Route>
             <Route path="/saved-movies">                    
                 <a className="moviescard__link" href={movie.trailerLink} target="_blank">
-                    <img className="moviescard__poster" src={`https://api.nomoreparties.co/${movie.image.url}`} alt="Постер"/>
+                    <img className="moviescard__poster" src={movie.image.url ? `https://api.nomoreparties.co/${movie.image.url}` : movie.image} alt="Постер"/>
                 </a> 
                 <button className="moviescard__save-button moviescard__save-button_type_delete" onClick={()=>{handleDeleteMovie(savedMovie)}}></button>
             </Route>
