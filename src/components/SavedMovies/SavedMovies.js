@@ -4,7 +4,7 @@ import SearchForm from "../SearchForm/SearchForm";
 import MoviesCardList from "../MoviesCardList/MoviesCardList";
 import Menu from "../Menu/Menu"
 
-function SavedMovies({handleSearh, handleDeleteMovie, savedMovies, visibleMovies, searchedMovies, 
+function SavedMovies({handleSearh, handleDeleteMovie, savedMovies, searchedMovies, visibleMovies,
     isSearched, searchError, searchText, shortfilm, isOpenMenu, setIsOpenMenu}) {
 
     return (
@@ -18,7 +18,37 @@ function SavedMovies({handleSearh, handleDeleteMovie, savedMovies, visibleMovies
                 searchText={searchText}
                 shortfilm={shortfilm}
             />
-            {visibleMovies.length > 0 
+
+            { isSearched
+            ?
+                searchedMovies.length > 0 
+                ?
+                    <MoviesCardList
+                    savedMovies={savedMovies}
+                    visibleMovies={visibleMovies}
+                    handleDeleteMovie={handleDeleteMovie}
+                    searchedMovies={searchedMovies}
+                    isSearched={isSearched}
+                    />
+                :
+                    <h2 className="movies-preloader">{searchError ? searchError : isSearched ? "Ничего не найдено" : ""}</h2>
+            :
+            savedMovies.length > 0
+             ? 
+                <MoviesCardList
+                    savedMovies={savedMovies}
+                    visibleMovies={visibleMovies}
+                    handleDeleteMovie={handleDeleteMovie}
+                    searchedMovies={searchedMovies}
+                    isSearched={isSearched}
+                />
+             :
+                <></>
+             }
+
+
+
+            {/* {savedMovies.length > 0
              ? 
                 <MoviesCardList
                     savedMovies={savedMovies}
@@ -29,7 +59,12 @@ function SavedMovies({handleSearh, handleDeleteMovie, savedMovies, visibleMovies
                 />
              :
                 <h2 className="movies-preloader">{searchError ? searchError : isSearched ? "Ничего не найдено" : ""}</h2>
-             }
+             } */}
+
+             {/* { savedMovies.length > 0 && searchedMovies.length === 0 
+             ? <h2 className="movies-preloader">{searchError ? searchError : isSearched ? "Ничего не найдено" : ""}</h2>
+             : <></>
+             } */}
         </main>
             <Footer/>
             <Menu

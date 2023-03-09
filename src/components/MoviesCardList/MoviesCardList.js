@@ -9,7 +9,7 @@ function MoviesCardList({savedMovies, visibleMovies, searchedMovies, handleSaveM
             else { return savedMovie.movieId === movie.movieId;}
         });
     })
-    
+
     return (
         <div className={searchedMovies ? "moviescardlist moviescardlist_active" : "moviescardlist"}>
             <Route path="/movies">

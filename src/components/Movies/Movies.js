@@ -18,7 +18,25 @@ function Movies({handleSearh, handleSaveMovie, handleDeleteMovie, savedMovies, v
                 shortfilm={shortfilm}
             />
 
-            {searchedMovies.length > 0 
+            { isSearched
+            ?
+                searchedMovies.length > 0 
+                    ?
+                    <MoviesCardList
+                        savedMovies={savedMovies}
+                        visibleMovies={visibleMovies}
+                        handleSaveMovie={handleSaveMovie}
+                        handleDeleteMovie={handleDeleteMovie}
+                        searchedMovies={searchedMovies}
+                        handleMoreMovies={handleMoreMovies}
+                     />
+                    :
+                        <h2 className="movies-preloader">{searchError ? searchError : isSearched ? "Ничего не найдено" : ""}</h2>
+            :
+                <></>
+            }
+
+            {/* {searchedMovies.length > 0 
              ? 
                 <MoviesCardList
                     savedMovies={savedMovies}
@@ -30,7 +48,7 @@ function Movies({handleSearh, handleSaveMovie, handleDeleteMovie, savedMovies, v
                 />
              :
                 <h2 className="movies-preloader">{searchError ? searchError : isSearched ? "Ничего не найдено" : ""}</h2>
-             }
+             } */}
         </main>
         <Footer/>
         <Menu

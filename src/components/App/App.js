@@ -48,6 +48,8 @@ function App() {
         setIsSearched(true)
         setSearchError('')
         setIsSavedSearched(false)
+        setSearchText(searchText)
+        setShortfilm(shortfilm)
       })
       .catch((err) => {
         console.log("Ошибка сервера", err);
@@ -63,10 +65,7 @@ function App() {
     mainApi
       .getSavedMovies()
       .then((data) => {
-        
         setSearchedMovies(search(data, searchText, shortfilm))
-        // setVisibleMovies(vizualizate(search(data, searchText, shortfilm)))
-        // setIsSearched(true)
         setIsSavedSearched(true)
         setSearchError('')
       })
@@ -85,7 +84,6 @@ function App() {
 
   function handleSaveMovie (movie) {
     setIsLoading(true)
-    console.log(savedMovies);
     mainApi
       .saveMovie(movie) 
       .then((newMovie) => {
