@@ -1,0 +1,20 @@
+.about-project__title-conteiner {
+    height: 50px;
+    width: 89.0625%;
+    margin: 110px auto 0;
+    border-bottom: 1px solid #000;
+}
+
+@media (max-width: 768px) {
+    .about-project__title-conteiner {
+      max-width: 668px;
+      margin: 90px auto 0;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .about-project__title-conteiner {
+        margin: 70px auto 4px;
+        width: 284px;
+    }
+  }

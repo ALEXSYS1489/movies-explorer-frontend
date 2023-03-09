@@ -1,0 +1,14 @@
+.moviescardlist__more_disabled {
+    background: #fff;
+    height: 90px;
+}
+
+.moviescardlist__more_disabled:hover {
+    cursor: auto;
+}
+
+@media (max-width: 1240px) {
+    .moviescardlist__more_disabled {
+        height: 10px;
+    }
+  }

@@ -1,0 +1,25 @@
+.header__signin {
+    width: 76px;
+    height: 24px;
+    background: #000000;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    border:  none;
+    padding: 8px 0 0;
+    text-align: center;
+}
+  
+  @media (max-width: 420px) {
+    .header__signin {
+        width: 54px;
+        height: 21px;  
+        font-size: 10px;
+        padding: 5px 0 0;
+    }
+  }

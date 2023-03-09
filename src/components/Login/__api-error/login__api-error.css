@@ -1,0 +1,18 @@
+.login__api-error {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: #fff;
+    margin: 135px 0 0;
+    display: block;
+    height: 14px;
+}
+
+@media (max-width: 420px) {
+    .login__api-error {
+        margin: 223px 0 0;
+    }
+  }

@@ -1,0 +1,18 @@
+.searchform__error {
+    position: absolute;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+    bottom: -20px;
+    left: 20px;
+    color: #FF4062;
+}
+  
+  @media (max-width: 420px) {
+    .searchform__error {
+      font-size: 11px;
+    }
+  }

@@ -1,0 +1,23 @@
+.portfolio__link-block {
+    width: 89.0625%;
+    margin: 20px auto 0;
+    border-bottom: 1px solid #E8E8E8;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio__link-block:last-of-type {
+    border-bottom: none;
+}
+
+@media (max-width: 768px) {
+    .portfolio__link-block {
+        max-width: 668px;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .portfolio__link-block {
+        width: 292px;
+    }
+  }

@@ -1,0 +1,17 @@
+.about-project__timeline-text {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin: 9px 0 0 0;
+}
+
+  @media (max-width: 420px) {
+    .about-project__timeline-text {
+        margin: 11px 0 0 0;
+        font-size: 11px;
+        line-height: 13px; 
+    }
+  }

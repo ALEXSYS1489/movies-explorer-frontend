@@ -1,0 +1,19 @@
+.moviescard__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 18px auto 0;
+    width: 324px;
+}
+
+@media (max-width: 1240px) {
+    .moviescard__container {
+        width: 306px;
+    }
+  }
+
+  @media (max-width: 740px) {
+    .moviescard__container {
+        width: 272px;
+        margin: 14px auto 0;
+    }
+  }
