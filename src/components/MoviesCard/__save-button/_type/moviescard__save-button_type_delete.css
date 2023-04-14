@@ -1,0 +1,5 @@
+.moviescard__save-button_type_delete {
+    background-image: url(../../../../images/DeleteMovie-button.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}

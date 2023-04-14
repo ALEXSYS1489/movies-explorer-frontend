@@ -1,0 +1,20 @@
+.footer__container {
+    width: 89.0625%;
+    margin: 0 auto 20px;
+    border-top: 1px solid #E8E8E8;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .footer__container {
+        max-width: 708px;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .footer__container {
+        width: 300px;
+        flex-direction: column-reverse;
+    }
+  }

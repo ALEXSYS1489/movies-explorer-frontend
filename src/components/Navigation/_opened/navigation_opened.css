@@ -1,0 +1,17 @@
+.navigation_opened {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 520px;
+    margin: 0;
+    position: relative;
+    align-items: center;
+    padding: 159px 0 0;
+    overflow: scroll;
+}
+
+@media (max-width: 420px) {
+    .navigation_opened {
+        padding: 144px 0 0;
+    }
+  }

@@ -1,0 +1,20 @@
+.about-project__timeline-container {
+    width: 89.0625%;
+    margin: 110px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .about-project__timeline-container {
+      margin: 93px auto 90px;
+      max-width: 668px;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .about-project__timeline-container {
+      margin: 60px auto 70px;
+      max-width: 284px;
+    }
+  }

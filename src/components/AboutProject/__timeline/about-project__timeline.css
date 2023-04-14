@@ -1,0 +1,33 @@
+.about-project__timeline {
+    width: 20%;
+    height: 36px;
+    background-color: #000;
+    color: #fff;
+}
+
+.about-project__timeline:last-of-type {
+  width: 80%;
+  background-color: #F2F2F2;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+    .about-project__timeline {
+      max-width: 140px;
+    }
+
+    .about-project__timeline:last-of-type {
+      max-width: 528px;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .about-project__timeline {
+      width: 100px;
+      height: 35px;
+    }
+
+    .about-project__timeline:last-of-type {
+      width: 184px;
+    }
+  }

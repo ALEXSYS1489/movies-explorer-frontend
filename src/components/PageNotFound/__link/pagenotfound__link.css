@@ -1,0 +1,25 @@
+.pagenotfound__link {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    margin: 184px auto 60px;
+}
+
+@media (max-width: 768px) {
+    .pagenotfound__link {
+        margin: 184px auto 222px;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .pagenotfound__link {
+        margin: 248px auto 30px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+  }

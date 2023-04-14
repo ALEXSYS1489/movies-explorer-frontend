@@ -1,0 +1,11 @@
+.register__logo {
+    height: 38px;
+    width: 38px;
+    background-image: url(../../../images/logo.svg);
+}
+
+  @media (max-width: 420px) {
+    .register__logo {
+        margin: 0 auto;
+    }
+  }

@@ -1,0 +1,9 @@
+.about-me__info {
+    margin: 66px 0 0;
+}
+  
+  @media (max-width: 420px) {
+    .about-me__info {
+        margin: 40px 0 0;
+    }
+  }
