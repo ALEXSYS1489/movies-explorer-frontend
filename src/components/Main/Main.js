@@ -5,11 +5,15 @@ import Techs from "../Techs/Techs"
 import AboutMe from "../AboutMe/AboutMe";
 import Portfolio from "../Portfolio/Portfolio"
 import Footer from "../Footer/Footer";
+import Menu from "../Menu/Menu"
 
-function Main() {
+function Main({loggedIn, isOpenMenu, setIsOpenMenu}) {
     return (
         <>
-        <Header/>
+        <Header
+          loggedIn={loggedIn}
+          setIsOpenMenu={setIsOpenMenu}
+        />
         <main>
             <NavTab/>
             <AboutProject/>
@@ -18,6 +22,10 @@ function Main() {
             <Portfolio/>
         </main>
         <Footer/>
+        <Menu
+          isOpenMenu={isOpenMenu}
+          setIsOpenMenu={setIsOpenMenu}
+        />
         </>
     );
   }

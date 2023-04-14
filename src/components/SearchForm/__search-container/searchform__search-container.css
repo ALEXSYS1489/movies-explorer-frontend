@@ -3,6 +3,7 @@
     margin: 80px auto 0;
     width: 89.0625%;
     column-gap: 10px;
+    position: relative;
 }
 
 @media (max-width: 768px) {

@@ -4,7 +4,7 @@
     height: 50px;
     width: 1086px;
     border: none;
-    padding: 0;
+    padding: 0 0 0 20px;
 }
 
 .searchform__movie-input::placeholder {
@@ -14,7 +14,7 @@
     font-size: 14px;
     line-height: 18px;
     color: #A0A0A0;
-    padding: 0 0 0 20px;
+    padding: 0;
 } 
   
   @media (max-width: 420px) {

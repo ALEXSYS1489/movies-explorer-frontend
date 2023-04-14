@@ -1,6 +1,6 @@
 .moviescardlist {
     margin: 0 auto;
     max-width: 1280px;
-    display: flex;
+    display: none;
     flex-direction: column;
 }

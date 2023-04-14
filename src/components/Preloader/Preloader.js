@@ -1,9 +1,9 @@
 import React from 'react'
 import './preloader.css'
 
-const Preloader = () => {
+const Preloader = ({isLoading}) => {
     return (
-        <div className="preloader">
+        <div className={isLoading ? "preloader preloader_active" : "preloader"}>
             <div className="preloader__container">
                 <span className="preloader__round"></span>
             </div>
