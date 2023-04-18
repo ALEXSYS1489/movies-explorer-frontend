@@ -1,4 +1,5 @@
-# movies-explorer-frontend
+# Bitfilms-frontend
+Адаптивное приложение с возможностью регистрации/авторизации и редактированием профиля. Можно искать фильмы по ключевым словам и добавлять их в избранное.
 
 Макет:
 https://drive.google.com/file/d/1tskndNdnhfWXH-rLaUjHY6Hodfjhp3-7/view?usp=sharing
@@ -8,6 +9,3 @@ api.alexsysdip.nomoredomainsclub.ru
 
 Фронтэнд:
 alexsysdip.nomoredomainsclub.ru
-
-Пул реквест:
-https://github.com/ALEXSYS1489/movies-explorer-frontend/pull/2
